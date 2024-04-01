@@ -1,5 +1,4 @@
-
-    $('#usuarios').DataTable();
+ $('#usuarios').DataTable();
 
 
 
