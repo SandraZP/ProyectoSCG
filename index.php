@@ -32,12 +32,12 @@
             <div class="tab-pane fade show active" id="admin-tab-pane" role="tabpanel" aria-labelledby="home-tab">
                 <div class="tabs-content">
                     <div id="admin-signup-tab-content" class="active signup-tab-content">
-                        <form class="signup-form" action="" onsubmit="return validarAdmin()">
+                        <form  action="" onsubmit="return validar()">
                             <div class="login-form">
                                 <h3>Nombre de usuario</h3>
-                                <input type="text" placeholder="Nombre de usuario"/><br>
+                                <input type="tex" name="usuario" id="usuario" placeholder="Nombre de usuario"/><br>
                                 <h3>Contraseña</h3>
-                                <input type="password" placeholder="Contraseña"/>
+                                <input type="password"name="pass" id="pass" placeholder="Contraseña"/>
                                 <div id="messageAdmin"></div>
                                 <br>
                                 <input id="loginAdmin" type="button" class="login-button" value="Iniciar ">
@@ -50,12 +50,12 @@
             <div class="tab-pane fade" id="profesor-tab-pane" role="tabpanel" aria-labelledby="profile-tab">
                 <div class="tabs-content">
                     <div id="profesor-signup-tab-content" class="active signup-tab-content">
-                        <form class="signup-form" action="" onsubmit="return validarProfesor()">
+                        <form  action="" onsubmit="return validar()">
                             <div class="login-form">
-                                <h3>Nombre de usuario</h3>
-                                <input type="text" placeholder="Nombre de usuario"/><br>
+                            <h3>Nombre de usuario</h3>
+                                <input type="tex" name="usuario" id="usuario" placeholder="Nombre de usuario"/><br>
                                 <h3>Contraseña</h3>
-                                <input type="password" placeholder="Contraseña"/>
+                                <input type="password"name="pass" id="pass" placeholder="Contraseña"/>
                                 <div id="messageProfesor"></div>
                                 <br>
                                 <input id="loginProfesor" type="button" class="login-button" value="Iniciar ">

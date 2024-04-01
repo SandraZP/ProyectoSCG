@@ -11,32 +11,55 @@ $('.try-again').click(function(){
   $('.login').slideDown(1000);
 });
 
-jQuery(document).ready(function($) {
-    // Función para iniciar sesión como administrador
-    function loginAdmin() {
-        var login = $('#admin-username').val();
-        var pass = $('#admin-password').val();
 
-        if (login && pass) {
-            // Aquí puedes realizar la llamada AJAX para el inicio de sesión del administrador
-        } else {
-            $('#messageUsuario').html('<div class="alert alert-danger">Por favor, complete todos los campos</div>');
-        }
-    }
 
-    // Función para iniciar sesión como profesor
-    function loginUsuario() {
-        var login = $('#usuario').val();
-        var pass = $('#contrasena').val();
+$(document).ready(function(){
+    $('#loginAdmin').on('click',function(){
+    loginAdmin();
 
-        if (login && pass) {
-            // Aquí puedes realizar la llamada AJAX para el inicio de sesión del usuario
-        } else {
-            $('#messageProfesor').html('<div class="alert alert-danger">Por favor, complete todos los campos</div>');
-        }
-    }
-
-    // Eventos de clic para iniciar sesión
-    $('#loginUsuario').on('click', loginAdmin);
-    $('#loginUsuario').on('click', loginUsuario);
 });
+$('#loginProfesor').on('click',function(){
+    loginProfesor();
+});
+})
+     function loginAdmin() {
+        var login = $('#usuario').val();
+        var pass = $('#pass').val();
+         $.ajax({
+            url:'./includes/loginUsuario.php',
+            method: 'POST',
+            data:{
+                login:login,
+                pass: pass
+            },
+            success: function(data){
+                $('#messageAdmin').html(data);
+
+                if(data.indexOf('Redirecting')>=0){
+                    window.location='adminstrador/';
+                }
+            }
+         })
+    }
+
+
+    function loginProfesor() {
+        var login = $('#usuario').val();
+        var pass = $('#pass').val();
+         $.ajax({
+            url:'./includes/loginProfesor.php',
+            method: 'POST',
+            data:{
+                login:login,
+                pass: pass
+            },
+            success: function(data){
+                $('#messageProfesor').html(data);
+
+                if(data.indexOf('Redirecting')>=0){
+                    window.location='profesor/';
+                }
+            }
+         })
+    }
+   
