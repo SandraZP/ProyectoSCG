@@ -6,6 +6,7 @@ require_once 'includes/header.php';
   <div class="app-title">
     <div>
       <h1><i class="bi bi-speedometer"></i> Lista de Usuarios </h1>
+  
     </div>
     <ul class="app-breadcrumb breadcrumb">
       <li class="breadcrumb-item"><i class="bi bi-house-door fs-6"></i></li>
@@ -16,8 +17,7 @@ require_once 'includes/header.php';
     <div class="col-md-12">
       <div class="tile">
       <div class="tile-body">
-              <div  class="table-responsive">
-              <table class="table table-hover table-bordered" id="tableusuarios">
+              <table class="table table-hover table-bordered" id="sampleTable">
                 <thead>
                   <tr>
                     <th>Name</th>
@@ -489,6 +489,8 @@ require_once 'includes/header.php';
               </table>
             </div>
           </div>
+        </div>
+      </div>
       </div>
     </div>
   </div>

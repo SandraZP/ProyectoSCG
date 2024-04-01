@@ -1,1 +1,3 @@
-$('#tableusuarios').DataTable();
+$(document).ready(function() {
+    $('#tableusuarios').DataTable();
+});
