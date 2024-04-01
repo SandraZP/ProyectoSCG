@@ -38,7 +38,7 @@
                                 <input type="text" placeholder="Nombre de usuario"/><br>
                                 <h3>Contraseña</h3>
                                 <input type="password" placeholder="Contraseña"/>
-                                <div id="messageUsuario"></div>
+                                <div id="messageAdmin"></div>
                                 <br>
                                 <input id="loginAdmin" type="button" class="login-button" value="Iniciar ">
                             </div>
@@ -56,7 +56,7 @@
                                 <input type="text" placeholder="Nombre de usuario"/><br>
                                 <h3>Contraseña</h3>
                                 <input type="password" placeholder="Contraseña"/>
-                                <div id="messageUsuario"></div>
+                                <div id="messageProfesor"></div>
                                 <br>
                                 <input id="loginProfesor" type="button" class="login-button" value="Iniciar ">
                             </div>
@@ -67,8 +67,8 @@
         </div><!--.tab-content-->
     </div><!--.form-wrap-->
 </div><!--.login-->
-<script src="/js/login.js"></script>
-<script src="/path/to/loginUsuario.php"></script> <!-- Asegúrate de especificar la ruta correcta -->
+<script src="/Proyectoscg/js/login.js"></script>
+<script src="/path/to/loginUsuario.php"></script>
 <script>
     $(document).ready(function(){
         $('.nav-tabs a').click(function(){
