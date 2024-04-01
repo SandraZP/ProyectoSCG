@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+    <!-- Aquí van tus etiquetas meta, títulos, estilos, etc. -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../Adminstrador/css/bootstrap.min.css">
+
+    <!-- jQuery -->
+    <script src="../Adminstrador/js/jquery-3.2.1.min.js"></script>
+    
+    <!-- Bootstrap JS -->
+    <script src="../Adminstrador/js/bootstrap.min.js"></script>
+
+    <!-- Otros archivos JS -->
+    <script src="../Adminstrador/js/main.js"></script>
+    <script src="../Adminstrador/js/plugins/pace.min.js"></script>
+    <script src="../Adminstrador/js/plugins/jquery.dataTables.min.js"></script>
+    <script src="../Adminstrador/js/plugins/dataTables.bootstrap.min.js"></script>
+    <script src="../Adminstrador/functions-usuarios.js"></script>
     <link rel="stylesheet" href="./css/style.css">
     <title>Inicio de sesión</title>
     <link href='https://fonts.googleapis.com/css?family=Ubuntu:500' rel='stylesheet' type='text/css'>
