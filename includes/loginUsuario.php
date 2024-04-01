@@ -4,17 +4,17 @@ session_start();
 
 if (!empty($_POST)) {
     if (empty($_POST['login']) || empty($_POST['pass'])) {
-        echo '<div class="alert alert-danger"><button type="button" class="close" data-dismiss="alert">&times;</button>
+        echo '<div class="alert alert-danger"><button type="button" class="close" data-dismiss="alert"></button>
         Todos los campos son necesarios</div>';
     } else {
+        require_once 'conexion.php';
         $login = $_POST['login'];
         $pass = $_POST['pass'];
 
-        try {
             $sql = 'SELECT * FROM usuario as u INNER JOIN rol as r ON u.idrol = r.idrol WHERE u.nombre = ?';
-            $query = $pdo->prepare($sql);
-            $query->execute(array($login));
-            $result = $query->fetch(PDO::FETCH_ASSOC);
+                    $query = $pdo->prepare($sql);
+                    $query->execute(array($login));
+                    $result = $query->fetch(PDO::FETCH_ASSOC);
 
             if ($result) {
                 if (password_verify($pass, $result['password'])) {
@@ -24,20 +24,16 @@ if (!empty($_POST)) {
                     $_SESSION['rol'] = $result['idrol'];
                     $_SESSION['nombre_rol'] = $result['rol'];
 
-                    echo '<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert">&times;</button>
-                    Redireccionando...</div>';
+                    echo '<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert"></button>
+                    Redirecting</div>';
                 } else {
-                    echo '<div class="alert alert-danger"><button type="button" class="close" data-dismiss="alert">&times;</button>
+                    echo '<div class="alert alert-danger"><button type="button" class="close" data-dismiss="alert"></button>
                     Usuario o contraseña incorrectos</div>';
                 }
             } else {
-                echo '<div class="alert alert-danger"><button type="button" class="close" data-dismiss="alert">&times;</button>
+                echo '<div class="alert alert-danger"><button type="button" class="close" data-dismiss="alert"></button>
                 Usuario no encontrado</div>';
             }
-        } catch (PDOException $e) {
-            echo '<div class="alert alert-danger"><button type="button" class="close" data-dismiss="alert">&times;</button>
-            Error al ejecutar la consulta</div>';
-        }
     }
 }
 ?>
