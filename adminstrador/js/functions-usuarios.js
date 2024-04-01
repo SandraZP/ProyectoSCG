@@ -1,2 +1,2 @@
 
-    $('#tableusuarios').DataTable();
+    $('#usuarios').$DataTable();

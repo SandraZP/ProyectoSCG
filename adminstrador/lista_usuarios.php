@@ -18,7 +18,7 @@ require_once 'includes/header.php';
       <div class="tile">
       <div class="tile-body">
               <div  class="table-responsive">
-              <table class="table table-hover table-bordered" id="sampleTable">
+              <table class="table table-hover table-bordered" id="usuarios">
                 <thead>
                   <tr>
                     <th>Name</th>
