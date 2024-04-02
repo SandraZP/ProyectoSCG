@@ -2,7 +2,7 @@
 
 require_once '../../../includes/conexion.php';
 
-$sql = 'SELECT * FROM usuarios WHERE estado != 0';
+$sql = 'SELECT * FROM usuario WHERE estado != 0';
 $squery = $pdo->prepare($sql);
 $squery->execute();
 

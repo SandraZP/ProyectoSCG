@@ -1,4 +1,9 @@
+
+
 <?php
+
+require_once 'includes/conexion.php';
+
 $host = 'localhost';
 $user = 'root';
 $db = 'escuela';
