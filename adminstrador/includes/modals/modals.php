@@ -17,12 +17,12 @@
 
           <div class="form-group">
             <label for="control-label">Primer Apellido</label>
-            <input type="text" class="form-control" name="apellido_paterno" id="apellido_paterno">
+            <input type="text" class="form-control" name="apellido_paterno" id="Primer Apellido">
           </div>
 
           <div class="form-group">
             <label for="control-label">Segundo Apellido</label>
-            <input type="text" class="form-control" name="apellido_materno" id="apellido_materno">
+            <input type="text" class="form-control" name="apellido_materno" id="Segundo Apellido">
           </div>
 
           <div class="form-group">
@@ -45,7 +45,8 @@
             <label for="listRol">Rol</label>
             <select  class="form-control"name="listRol" id="listRol">
               <option value="1">Adminstrador</option>
-              <option value="2">Asistente</option>
+              <option value="2">Profesor</option>
+              <option value="3">Estudiante</option>
             </select>
           </div>
 

@@ -1,7 +1,7 @@
 <?php
 $host = 'localhost';
 $user = 'root';
-$db = 'programa_educativo';
+$db = 'escuela';
 $pass = 'Manchas2015';
 
 try {

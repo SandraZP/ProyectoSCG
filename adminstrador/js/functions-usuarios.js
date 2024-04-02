@@ -1,7 +1,7 @@
  $('#usuarios').DataTable();
 
 
-document.AddEventListener('DOMcontentLoaded',function(){
+document.addEventListener('DOMcontentLoaded',function(){
     usuarios=$('#usuarios').DataTable({
         "aProcessing": true,
         "aServerSide": true,
@@ -21,7 +21,8 @@ document.AddEventListener('DOMcontentLoaded',function(){
             {"data":"usuario"},
             {"data":"sexo"},
             {"data":"correo"},
-            {"data":"rol"}
+            {"data":"rol"},
+            {"data":"estado"}
         ],
         "responsive": true,
         "bDestroy":true,
