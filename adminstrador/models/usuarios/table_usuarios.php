@@ -16,9 +16,11 @@ for ($i = 0; $i < count($consulta); $i++) {
     }
 
     $consulta[$i]['acciones'] = '
-    <button class="btn btn-primary" title="editar" onclick="editarUsuario(' . $consulta[$i]['idusuario'] . ')">Editar</button>
+    <button class="btn btn-primary" title="editar" onclick="editarUsuario
+    (' . $consulta[$i]['idusuario'] . ')">Editar</button>
     
-    <button class="btn btn-danger" title="eliminar" onclick="eliminarUsuario(' . $consulta[$i]['idusuario'] . ')">Eliminar</button>';
+    <button class="btn btn-danger" title="eliminar" onclick="eliminarUsuario
+    (' . $consulta[$i]['idusuario'] . ')">Eliminar</button>';
 }
 
 echo json_encode($consulta, JSON_UNESCAPED_UNICODE);
