@@ -1,15 +1,20 @@
+const spans = document.querySelectorAll('p span');
+const numLetters = spans.length;
 
-    $('.error-page').hide(0);
-
-$('.login-button , .no-access').click(function(){
-  $('.login').slideUp(500);
-  $('.error-page').slideDown(1000);
+spans.forEach(function(span, i) {
+    const mappedIndex = i - (numLetters / 2)
+    span.style.animationDelay = (mappedIndex * 0.25) + 's';
 });
 
-$('.try-again').click(function(){
-  $('.error-page').hide(0);
-  $('.login').slideDown(1000);
-});
+const switchers = [...document.querySelectorAll('.switcher')]
+
+switchers.forEach(item => {
+	item.addEventListener('click', function() {
+		switchers.forEach(item => item.parentElement.classList.remove('is-active'))
+		this.parentElement.classList.add('is-active')
+	})
+})
+
 
 
 

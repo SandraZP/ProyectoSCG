@@ -24,61 +24,66 @@
 </head>
 <body>
 
-<div class="login">
-  <div class="login-header">
-    <h1>Bienvenido</h1>
+<section class="forms-section">
+  <!-- Cambia "Bienvenido" por "Geist Sans" -->
+  <div class="container">
+    <p aria-label="Bienvenido">
+      <span aria-hidden="true">B</span><span aria-hidden="true">i</span><span aria-hidden="true">e</span><span aria-hidden="true">n</span><span aria-hidden="true">v</span><span aria-hidden="true">e</span><span aria-hidden="true">n</span><span aria-hidden="true">i</span><span aria-hidden="true">d</span><span aria-hidden="true">o</span>
+    </p>
+</div>
+
+
+  <div class="forms">
+    <div class="form-wrapper is-active">
+      <button type="button" class="switcher switcher-login">
+        Login
+        <span class="underline"></span>
+      </button>
+
+
+      <form class="form form-login">
+        <fieldset>
+          <div class="input-block">
+            <label for="login-email">usuario</label>
+            <input id="login-email" type="usuario" required>
+          </div>
+          <div class="input-block">
+            <label for="login-password">contraseña</label>
+            <input id="login-password" type="password" required>
+          </div>
+        </fieldset>
+        <button type="submit" class="btn-login">Iniciar</button>
+      </form>
+
+
+    </div>
+    <div class="form-wrapper">
+      <button type="button" class="switcher switcher-signup">
+        Sign Up
+        <span class="underline"></span>
+      </button>
+
+
+      <form class="form form-signup">
+        <fieldset>
+          <div class="input-block">
+            <label for="signup-email">usuario</label>
+            <input id="signup-email" type="usuario" required>
+          </div>
+          <div class="input-block">
+            <label for="signup-password">Password</label>
+            <input id="signup-password" type="password" required>
+          </div>
+          <div class="input-block">
+            <label for="signup-password-confirm">Confirm password</label>
+            <input id="signup-password-confirm" type="password" required>
+          </div>
+        </fieldset>
+        <button type="submit" class="btn-signup">ContinueIniciar</button>
+      </form>
+    </div>
   </div>
-    <div class="form-wrap">
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-            <li class="nav-item" role="presentation">
-                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#usuario-tab-pane" 
-                role="tab" aria-controls="usuario-tab-pane" aria-selected="true">Administrador</a>
-            </li>
-            <li class="nav-item" role="presentation">
-                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profesor-tab-pane" 
-                role="tab" aria-controls="profesor-tab-pane" aria-selected="false">Profesor</a>
-            </li>
-        </ul>
-
-        <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="usuario-tab-pane" role="tabpanel" aria-labelledby="home-tab">
-                <div class="tabs-content">
-                    <div id="admin-signup-tab-content" class="active signup-tab-content">
-                        <form  action="" onsubmit="return validar()">
-                            <div class="login-form">
-                                <h3>Nombre de usuario</h3>
-                                <input type="tex" name="usuario" id="usuario" placeholder="Nombre de usuario"/><br>
-                                <h3>Contraseña</h3>
-                                <input type="password"name="pass" id="pass" placeholder="Contraseña"/>
-                                <div id="messageUsuario"></div>
-                                <br>
-                                <input id="loginUsuario" type="button" class="login-button" value="Iniciar ">
-                            </div>
-                        </form>
-                    </div><!--.signup-tab-content-->
-                </div><!--.tabs-content-->
-            </div><!--#admin-tab-pane-->
-
-            <div class="tab-pane fade" id="profesor-tab-pane" role="tabpanel" aria-labelledby="profile-tab">
-                <div class="tabs-content">
-                    <div id="profesor-signup-tab-content" class="active signup-tab-content">
-                        <form  action="" onsubmit="return validar()">
-                            <div class="login-form">
-                            <h3>Nombre de usuario</h3>
-                                <input type="tex" name="usuario" id="usuario" placeholder="Nombre de usuario"/><br>
-                                <h3>Contraseña</h3>
-                                <input type="password"name="pass" id="pass" placeholder="Contraseña"/>
-                                <div id="messageProfesor"></div>
-                                <br>
-                                <input id="loginProfesor" type="button" class="login-button" value="Iniciar ">
-                            </div>
-                        </form>
-                    </div><!--.signup-tab-content-->
-                </div><!--.tabs-content-->
-            </div><!--#profesor-tab-pane-->
-        </div><!--.tab-content-->
-    </div><!--.form-wrap-->
-</div><!--.login-->
+</section>
 <script src="/Proyectoscg/js/login.js"></script>
 <script src="/path/to/loginUsuario.php"></script>
 <script>
