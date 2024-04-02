@@ -1,21 +1,14 @@
-
-
 <?php
-
-require_once 'includes/conexion.php';
-
-$host = 'localhost';
-$user = 'root';
-$db = 'escuela';
-$pass = 'Manchas2015';
-
-try {
-    $pdo = new PDO('mysql:host=' . $host . ';port=3307;dbname=' . $db . ';charset=utf8', $user, $pass);
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
-} catch (PDOException $e) { 
-    // Aquí, en lugar de solo imprimir el mensaje de error, puedes lanzar la excepción nuevamente o manejarla de alguna manera
-    throw new PDOException('Error al conectar a la base de datos: ' . $e->getMessage()); 
+$server = "localhost:3307"; // Especificamos el puerto 3307 aquí
+$db = "escuela";
+$user = "root";
+$pass = "Manchas2015";
+// Create connection
+$conexion = new mysqli($server, $user, $pass, $db);
+// Check connection
+if ($conexion->connect_errno) {
+    die("Connection failed: " . $conexion->connect_error); // Usamos $conexion->connect_error en lugar de $conexion->connect_errno
+} else {
+    echo "Conectado"; // Cambiamos "conectado" a "Conectado" para consistencia
 }
 ?>
-
-
