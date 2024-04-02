@@ -51,7 +51,7 @@ h1, h2, h3, h4, h5, h6, a {
   padding-left:10px;
 }
 /* Aplicar estilos a los botones */
-#loginAdmin,
+#loginUsuario,
 #loginProfesor {
   height:30px;
   width:100px;

@@ -1,5 +1,5 @@
  <!--- MODAL USUARIO--->
-<div class="modal fade" id="modalAdmin" tabindex="-1"  role="dialog" aria-hidden="true">
+<div class="modal fade" id="modalUsuario" tabindex="-1"  role="dialog" aria-hidden="true">
   <div class="modal-dialog  modal-dialog-centered modal-dialog-scrollable">
     <div class="modal-content">
       <div class="modal-header">
@@ -9,7 +9,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <form  id="formAdmin"  name="formAdmin" >
+        <form  id="formUsuario"  name="formUsuario" >
           <div class="form-group">
             <label for="control-label">Nombre</label>
             <input type="text" class="form-control" name="nombre" id="nombre">
@@ -17,12 +17,12 @@
 
           <div class="form-group">
             <label for="control-label">Primer Apellido</label>
-            <input type="text" class="form-control" name="apellido_paterno" id="Primer Apellido">
+            <input type="text" class="form-control" name="Primer Apellido" id="Primer Apellido">
           </div>
 
           <div class="form-group">
             <label for="control-label">Segundo Apellido</label>
-            <input type="text" class="form-control" name="apellido_materno" id="Segundo Apellido">
+            <input type="text" class="form-control" name="Segundo Apellido" id="Segundo Apellido">
           </div>
 
           <div class="form-group">

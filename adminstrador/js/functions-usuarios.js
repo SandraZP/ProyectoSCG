@@ -35,6 +35,6 @@ document.addEventListener('DOMcontentLoaded',function(){
 
 
  function openModal(){
-    $('#modalAdmin').modal('show');
+    $('#modalUusuario').modal('show');
    }
    

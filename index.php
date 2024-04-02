@@ -31,8 +31,8 @@
     <div class="form-wrap">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
-                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#admin-tab-pane" 
-                role="tab" aria-controls="admin-tab-pane" aria-selected="true">Administrador</a>
+                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#usuario-tab-pane" 
+                role="tab" aria-controls="usuario-tab-pane" aria-selected="true">Administrador</a>
             </li>
             <li class="nav-item" role="presentation">
                 <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profesor-tab-pane" 
@@ -41,7 +41,7 @@
         </ul>
 
         <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="admin-tab-pane" role="tabpanel" aria-labelledby="home-tab">
+            <div class="tab-pane fade show active" id="usuario-tab-pane" role="tabpanel" aria-labelledby="home-tab">
                 <div class="tabs-content">
                     <div id="admin-signup-tab-content" class="active signup-tab-content">
                         <form  action="" onsubmit="return validar()">
@@ -50,9 +50,9 @@
                                 <input type="tex" name="usuario" id="usuario" placeholder="Nombre de usuario"/><br>
                                 <h3>Contraseña</h3>
                                 <input type="password"name="pass" id="pass" placeholder="Contraseña"/>
-                                <div id="messageAdmin"></div>
+                                <div id="messageUsuario"></div>
                                 <br>
-                                <input id="loginAdmin" type="button" class="login-button" value="Iniciar ">
+                                <input id="loginUsuario" type="button" class="login-button" value="Iniciar ">
                             </div>
                         </form>
                     </div><!--.signup-tab-content-->

@@ -14,8 +14,8 @@ $('.try-again').click(function(){
 
 
 $(document).ready(function(){
-    $('#loginAdmin').on('click',function(){
-    loginAdmin();
+    $('#loginUsuario').on('click',function(){
+    loginUsuario();
 
 });
 $('#loginProfesor').on('click',function(){
@@ -33,7 +33,7 @@ $('#loginProfesor').on('click',function(){
                 pass: pass
             },
             success: function(data){
-                $('#messageAdmin').html(data);
+                $('#messageUsuario').html(data);
 
                 if(data.indexOf('Redirecting')>=0){
                     window.location='adminstrador/';
