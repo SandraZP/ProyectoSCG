@@ -3,6 +3,7 @@
 
 
 
-function openModal(){
- $('#ModalAdmin').modal('show');
-}
+ function openModal(){
+    $('#modalAdmin').modal('show');
+   }
+   
