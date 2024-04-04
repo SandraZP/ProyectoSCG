@@ -11,6 +11,9 @@
     
     <!-- Bootstrap JS -->
     <script src="../Adminstrador/js/bootstrap.min.js"></script>
+  
+
+
 
     <!-- Otros archivos JS -->
     <script src="../Adminstrador/js/main.js"></script>
@@ -73,10 +76,6 @@
           <div class="input-block">
             <label for="signup-password">Password</label>
             <input id="signup-password" type="password" required>
-          </div>
-          <div class="input-block">
-            <label for="signup-password-confirm">Confirm password</label>
-            <input id="signup-password-confirm" type="password" required>
           </div>
         </fieldset>
         <button type="submit" class="btn-signup">ContinueIniciar</button>
