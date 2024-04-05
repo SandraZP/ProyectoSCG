@@ -11,7 +11,8 @@
     
     <!-- Bootstrap JS -->
     <script src="../Adminstrador/js/bootstrap.min.js"></script>
-  
+    
+    <script src="js/functions-usuarios.js"></script>
 
 
 

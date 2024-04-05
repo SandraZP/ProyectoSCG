@@ -1,5 +1,9 @@
 <?php
-require_once '../../../includes/conexion.php';
+
+require_once '../../../administrador/modals/modals/modals.php';
+require_once '../../../administrador/models/usuarios/tables_usuarios.php';
+
+
 
 // Verifica si la conexión a la base de datos se realizó correctamente
 if (!$conexion) {
@@ -31,7 +35,4 @@ if (mysqli_num_rows($resultado) > 0) {
 
 // Convierte el array a formato JSON y envíalo como respuesta
 echo json_encode($consulta, JSON_UNESCAPED_UNICODE);
-
-// Cierra la conexión a la base de datos
-mysqli_close($conexion);
 ?>
