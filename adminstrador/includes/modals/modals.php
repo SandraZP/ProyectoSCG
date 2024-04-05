@@ -16,13 +16,13 @@
           </div>
 
           <div class="form-group">
-            <label for="primer_apellido">Primer Apellido</label>
-            <input type="text" class="form-control" name="primer_apellido" id="primer_apellido">
+            <label for="paterno">Primer Apellido</label>
+            <input type="text" class="form-control" name="paterno" id="paterno">
           </div>
 
           <div class="form-group">
-            <label for="segundo_apellido">Segundo Apellido</label>
-            <input type="text" class="form-control" name="segundo_apellido" id="segundo_apellido">
+            <label for="materno">Segundo Apellido</label>
+            <input type="text" class="form-control" name="materno" id="materno">
           </div>
 
           <div class="form-group">
