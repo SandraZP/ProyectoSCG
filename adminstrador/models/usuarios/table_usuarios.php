@@ -2,7 +2,7 @@
 
 require_once '../../../includes/conexion.php';
 
-$sql = 'SELECT * FROM usuario WHERE estado != 0';
+$sql = 'SELECT * FROM usuarios WHERE estado != 0';
 $squery = $pdo->prepare($sql);
 $squery->execute();
 
@@ -17,10 +17,10 @@ for ($i = 0; $i < count($consulta); $i++) {
 
     $consulta[$i]['acciones'] = '
     <button class="btn btn-primary" title="editar" onclick="editarUsuario
-    (' . $consulta[$i]['idusuario'] . ')">Editar</button>
+    ('.$consulta[$i]['usuario_id'] . ')">Editar</button>
     
     <button class="btn btn-danger" title="eliminar" onclick="eliminarUsuario
-    (' . $consulta[$i]['idusuario'] . ')">Eliminar</button>';
+    ('.$consulta[$i]['usuario_id'].')">Eliminar</button>';
 }
 
 echo json_encode($consulta, JSON_UNESCAPED_UNICODE);

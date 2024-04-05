@@ -14,13 +14,13 @@ document.addEventListener('DOMcontentLoaded',function(){
         },
         "columns":[
             {"data":"acciones"},
-            {"data":"idusuario"},
+            {"data":"usuario_id"},
             {"data":"nombre"},
-            {"data":"apellido_paterno"},
-            {"data":"apellido_materno"},
+            {"data":"preimer_apellido"},
+            {"data":"segundo_apellido"},
+             {"data":"sexo"},
+             {"data":"correo"},
             {"data":"usuario"},
-            {"data":"sexo"},
-            {"data":"correo"},
             {"data":"rol"},
             {"data":"estado"}
         ],

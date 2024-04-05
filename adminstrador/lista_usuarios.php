@@ -22,7 +22,7 @@ require_once 'includes/modals/modals.php';
               <thead>
                 <tr>
                   <th>Acciones</th>
-                  <th>ID</th>
+                  <th>Id</th>
                   <th>Nombre</th>
                   <th>Apellido Paterno</th>
                   <th>Apellido Materno</th>
@@ -30,6 +30,7 @@ require_once 'includes/modals/modals.php';
                   <th>Sexo</th>
                   <th>Correo</th>
                   <th>Rol</th>
+                  <th>Estado</th>
                 </tr>
               </thead>
               <tbody>

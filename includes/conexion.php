@@ -1,6 +1,6 @@
 <?php
 $server = "localhost:3307"; // Especificamos el puerto 3307 aquí
-$db = "escuela";
+$db = "sistema_escolar";
 $user = "root";
 $pass = "Manchas2015";
 // Create connection

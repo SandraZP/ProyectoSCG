@@ -16,28 +16,38 @@
           </div>
 
           <div class="form-group">
-            <label for="apellidoPaterno">Primer Apellido</label>
-            <input type="text" class="form-control" name="apellidoPaterno" id="apellidoPaterno">
+            <label for="segundo_apellido">Primer Apellido</label>
+            <input type="text" class="form-control" name="primer_apellido" id="primer_apellido">
           </div>
 
           <div class="form-group">
-            <label for="apellidoMaterno">Segundo Apellido</label>
-            <input type="text" class="form-control" name="apellidoMaterno" id="apellidoMaterno">
+            <label for="segundo_apellido">Segundo Apellido</label>
+            <input type="text" class="form-control" name="segundo_apellido" id="segundo_apellido">
           </div>
 
+          <div class="form-group">
+            <label for="listSexo">Sexo</label>
+            <select class="form-control" name="listSexo" id="listSexo">
+              <option value="1">Hombre</option>
+              <option value="2">Mujer</option>
+            </select>
+          </div>
+          
+
+         
+
+          <div class="form-group">
+            <label for="correo">Correo</label>
+            <input type="text" class="form-control" name="correo" id="correo">
+          </div>
+         
           <div class="form-group">
             <label for="usuario">Usuario</label>
             <input type="text" class="form-control" name="usuario" id="usuario">
           </div>
-
           <div class="form-group">
-            <label for="sexo">Sexo</label>
-            <input type="text" class="form-control" name="sexo" id="sexo">
-          </div>
-          
-          <div class="form-group">
-            <label for="password">Contraseña</label>
-            <input type="password" class="form-control" name="password" id="password">
+            <label for="clave">Contraseña</label>
+            <input type="password" class="form-control" name="clave" id="clave">
           </div>
 
           <div class="form-group">
