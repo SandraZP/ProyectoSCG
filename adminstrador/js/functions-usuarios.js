@@ -32,6 +32,7 @@
 
 
 
+
  function openModal(){
     $('#modalUsuario').modal('show');
    }
