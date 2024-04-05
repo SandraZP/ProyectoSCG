@@ -27,8 +27,10 @@ if (mysqli_num_rows($resultado) > 0) {
         
         // Construye las acciones para cada usuario
         $acciones = '
-            <button class="btn btn-primary" title="editar" onclick="editarUsuario('.$fila['usuario_id'].')">Editar</button>
-            <button class="btn btn-danger" title="eliminar" onclick="eliminarUsuario('.$fila['usuario_id'].')">Eliminar</button>';
+            <button class="btn btn-primary" title="editar"
+             onclick="editarUsuario('.$fila['usuario_id'].')">Editar</button>
+            <button class="btn btn-danger" title="eliminar" 
+            onclick="eliminarUsuario('.$fila['usuario_id'].')">Eliminar</button>';
         
         $fila['acciones'] = $acciones;
 
