@@ -2,7 +2,8 @@
 
 
  document.addEventListener('DOMContentLoaded', function() {
-    usuarios = $('#usuarios').DataTable({
+    var usuarios = $('#usuarios').DataTable({
+    //usuarios = $('#usuarios').DataTable({
         "aProcessing": true,
         "aServerSide": true,
         "language": {

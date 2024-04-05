@@ -1,17 +1,21 @@
 <?php
-
-require_once '../../../administrador/modals/modals/modals.php';
-require_once '../../../administrador/models/usuarios/tables_usuarios.php';
-
-
+require_once '../../../includes/conexion.php'; // Asegúrate de incluir el archivo de conexión correctamente
 
 // Verifica si la conexión a la base de datos se realizó correctamente
 if (!$conexion) {
     die("Error de conexión: " . mysqli_connect_error());
 }
 
+// Forma la consulta SQL
 $sql = 'SELECT * FROM usuarios WHERE estado != 0';
+
+// Ejecuta la consulta SQL
 $resultado = mysqli_query($conexion, $sql);
+
+// Verifica si hay errores en la ejecución de la consulta
+if (!$resultado) {
+    die("Error en la consulta SQL: " . mysqli_error($conexion));
+}
 
 $consulta = array();
 
