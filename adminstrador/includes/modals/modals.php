@@ -32,10 +32,7 @@
               <option value="2">Mujer</option>
             </select>
           </div>
-          
-
-         
-
+  
           <div class="form-group">
             <label for="correo">Correo</label>
             <input type="text" class="form-control" name="correo" id="correo">
