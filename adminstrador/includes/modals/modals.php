@@ -16,7 +16,7 @@
           </div>
 
           <div class="form-group">
-            <label for="segundo_apellido">Primer Apellido</label>
+            <label for="primer_apellido">Primer Apellido</label>
             <input type="text" class="form-control" name="primer_apellido" id="primer_apellido">
           </div>
 

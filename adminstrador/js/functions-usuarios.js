@@ -1,13 +1,11 @@
  $('#usuarios').DataTable();
 
-
  document.addEventListener('DOMContentLoaded', function() {
     var usuarios = $('#usuarios').DataTable({
-    //usuarios = $('#usuarios').DataTable({
         "aProcessing": true,
         "aServerSide": true,
         "language": {
-            "url": "//cdn.datatables.net/plug-ins/1.10.20/Spanish.json"
+            "url": "./lang/Spanish.json" // Corregido la ruta del archivo de idioma
         },
         "ajax": {
             "url": "./models/usuarios/table_usuarios.php",
@@ -31,6 +29,7 @@
         "order": [[0, "asc"]]
     });
 });
+
 
 
  function openModal(){
