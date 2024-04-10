@@ -25,7 +25,7 @@
         ],
         "responsive": true,
         "bDestroy": true,
-        "iDisplayLength": 10,
+        "iDisplayLength": 9,
         "order": [[0, "asc"]]
     });
 });
