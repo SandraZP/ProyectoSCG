@@ -1,5 +1,5 @@
 <?php
-$server = "localhost:3307"; // Especificamos el puerto 3307 aquí
+$server = "localhost"; // Especificamos el puerto 3307 aquí
 $db = "sistema_escolar";
 $user = "root";
 $pass = "Manchas2015";

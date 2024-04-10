@@ -1,4 +1,23 @@
 <?php
+
+
+// Permitir el acceso desde cualquier origen
+header("Access-Control-Allow-Origin: *");
+
+// Permitir métodos GET, POST, OPTIONS
+header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
+
+// Permitir ciertos encabezados
+header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
+
+// Terminar si la solicitud es OPTIONS (preflight)
+if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
+    http_response_code(200);
+    exit();
+}
+
+// Resto del código del script PHP
+
 require_once '../../../includes/conexion.php'; // Asegúrate de incluir el archivo de conexión correctamente
 
 // Verifica si la conexión a la base de datos se realizó correctamente
